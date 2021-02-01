@@ -1,0 +1,25 @@
+<div class="add-item-container">
+
+    <div class="dropdown">
+        <label>Color:</label>
+        <select [(ngModel)]="selectedColor">
+            <option>Select</option>
+            <option *ngFor="let color of colors"> {{color}} </option>
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <label>Background color:</label>
+        <select [(ngModel)]="selectedBackgroundColor">
+            <option>Select</option>
+            <option *ngFor="let color of colors"> {{color}} </option>
+        </select>
+    </div>
+
+    <div class="description">
+        <div>description</div>
+        <textarea [(ngModel)]="description"></textarea>
+    </div>
+
+    <button (click)="addDescription()">Add</button>
+</div>

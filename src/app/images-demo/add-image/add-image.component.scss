@@ -1,0 +1,27 @@
+.content-wrapper {
+    padding: 10px;
+    display: flex;
+
+    .inputs {
+        flex: 1;
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .add-btn {
+        width: 100px;
+        margin-left: 50px;
+
+        button{
+            padding: 32px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: green;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="ball-game-wrapper">
+
+    <div class="color-ball">
+        <app-colors (ball)="getBall($event)"></app-colors>
+    </div>
+
+    <div class="game-wrapper">
+        <app-play [color]="currentBall.color" [text]="currentBall.text" [ballSize]="ballSize"></app-play>
+    </div>
+
+    <div class="size">
+        <app-change-size (size)="getSize($event)"></app-change-size>
+    </div>
+
+
+
+</div>

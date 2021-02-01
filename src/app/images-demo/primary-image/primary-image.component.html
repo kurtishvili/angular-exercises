@@ -1,0 +1,18 @@
+<div class="primary-image-container">
+
+    <div class="primary-image">
+        <img [src]="primaryImageUrlActive">
+    </div>
+
+    <div class="small-images-wrapper">
+
+        <div class="small-images" *ngFor="let url of urls" (mouseenter)="onMouseEnter(url)"
+            (mouseleave)="onMouseLeave()">
+            <div class="first-line">
+                <img [src]="url">
+            </div>
+        </div>
+
+    </div>
+
+</div>

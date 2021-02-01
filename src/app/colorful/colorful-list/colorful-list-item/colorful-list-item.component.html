@@ -1,0 +1,10 @@
+<div class="list-item-wrapper">
+
+    <div class="list-item" [style.background-color]="backgroundColor">
+        <span [style.color]="color"> {{description}} </span>
+        <div class="change-item">
+            <div class="top-arrow" (click)="topArrowClick()" *ngIf="!isFirst"></div>
+            <div class="bottom-arrow" (click)="bottomArrowClick()" *ngIf="!isLast"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+.main-container {
+    display: flex;
+    height: calc(100vh - 61px);
+
+    .left-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .add-description {
+            padding: 20px;
+            display: flex;
+
+            .input {
+                display: inline-block;
+                margin-right: 10px;
+                flex: 1;
+
+                input {
+                    padding: 5px;
+                    width: 100%;
+                }
+            }
+
+            .add-btn {
+                width: 100px;
+                margin-left: 20px;
+                width: 65px;
+
+                button {
+                    padding: 5px 20px;
+                    cursor: pointer;
+                    background: green;
+                    border: none;
+                    outline: none;
+                    color: white;
+                }
+            }
+        }
+        .list-container {
+            flex: 1;
+            border: 1px solid black;
+            overflow: auto;
+            margin: 20px;
+
+            .list-item {
+                padding: 5px;
+                border: 1px solid;
+                margin: 10px 5px;
+                cursor: pointer;
+
+                &.selected {
+                    background-color: red;
+                }
+            }
+        }
+    }
+    .arrow-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .arrows {
+            .left-arrow {
+                border-right: 5px solid black;
+                border-top: 5px solid black;
+                width: 15px;
+                height: 15px;
+                transform: rotate(225deg);
+                cursor: pointer;
+            }
+            .right-arrow {
+                border-right: 5px solid black;
+                border-top: 5px solid black;
+                width: 15px;
+                height: 15px;
+                transform: rotate(45deg);
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .right-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .add-description {
+            padding: 20px;
+            display: flex;
+
+            .input {
+                display: inline-block;
+                margin-right: 10px;
+                flex: 1;
+
+                input {
+                    padding: 5px;
+                    width: 100%;
+                }
+            }
+
+            .add-btn {
+                width: 100px;
+                margin-left: 20px;
+                width: 65px;
+
+                button {
+                    padding: 5px 20px;
+                    cursor: pointer;
+                    background: green;
+                    border: none;
+                    outline: none;
+                    color: white;
+                }
+            }
+        }
+        .list-container {
+            flex: 1;
+            border: 1px solid black;
+            overflow: auto;
+            margin: 20px;
+
+            .list-item {
+                padding: 5px;
+                border: 1px solid;
+                margin: 10px 5px;
+                cursor: pointer;
+
+                &.selected {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

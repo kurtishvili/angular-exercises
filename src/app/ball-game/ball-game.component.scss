@@ -1,0 +1,19 @@
+.ball-game-wrapper {
+    display: flex;
+
+    .color-ball {
+        width: 100px;
+        margin: 15px;
+    }
+    .game-wrapper {
+        flex: 1;
+    }
+}
+.size {
+    margin: 15px;
+
+    div {
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

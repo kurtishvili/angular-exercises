@@ -1,0 +1,49 @@
+<div class="main-container">
+
+    <div class="left-container">
+
+        <div class="add-description">
+            <div class="input">
+                <input type="text" [(ngModel)]="description1">
+            </div>
+            <div class="add-btn">
+                <button (click)="addDescriptionFirstList()">Add</button>
+            </div>
+        </div>
+
+        <div class="list-container">
+
+            <div class="list-item" *ngFor="let description of descriptionList1" (click)="selectFirstListItem(description)"
+                [class.selected]="description.selected">
+                {{description.description}}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="arrow-container">
+        <div class="arrows">
+            <div class="left-arrow" (click)="leftArrowClick()" ></div>
+            <div class="right-arrow" (click)="rightArrowClick()"></div>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="add-description">
+            <div class="input">
+                <input type="text" [(ngModel)]="description2">
+            </div>
+            <div class="add-btn">
+                <button (click)="addDescriptioninSecondList()">Add</button>
+            </div>
+        </div>
+
+        <div class="list-container">
+            <div (click)="selectSecondListItem(description)" class="list-item" *ngFor="let description of descriptionList2" [class.selected]="description.selected">
+                {{description.description}}
+            </div>
+        </div>
+    </div>
+
+</div>

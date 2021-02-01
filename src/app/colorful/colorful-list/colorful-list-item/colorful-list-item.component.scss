@@ -1,0 +1,36 @@
+.list-item-wrapper {
+    padding: 20px;
+
+    .list-item {
+        width: 400px;
+        min-height: 60px;
+        border: 1px solid black;
+        position: relative;
+        cursor: pointer;
+        top: 0px;
+        bottom: 0px;
+
+        &:hover .change-item {
+            width: 50px;
+            position: absolute;
+            top: 8px;
+            right: 15px;
+
+            .top-arrow {
+                border-right: 5px solid black;
+                border-top: 5px solid black;
+                width: 15px;
+                height: 15px;
+                transform: rotate(315deg);
+            }
+
+            .bottom-arrow {
+                border-right: 5px solid black;
+                border-top: 5px solid black;
+                width: 15px;
+                height: 15px;
+                transform: rotate(135deg);
+            }
+        }
+    }
+}

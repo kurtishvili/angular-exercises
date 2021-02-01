@@ -1,0 +1,46 @@
+.game-wrapper {
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    height: 400px;
+    flex: 1;
+    .arrow {
+        border-right: 5px solid black;
+        border-top: 5px solid black;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .top {
+        transform: translateX(-50%) rotate(315deg);
+        left: 50%;
+        top: 20px;
+    }
+    .left {
+        transform: translateY(-50%) rotate(220deg);
+        top: 50%;
+        left: 20px;
+    }
+
+    .right {
+        transform: translateY(-50%) rotate(45deg);
+        right: 20px;
+        top: 50%;
+    }
+
+    .bottom {
+        transform: translateX(-50%) rotate(135deg);
+        left: 50%;
+        bottom: 20px;
+    }
+
+    .ball {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+}

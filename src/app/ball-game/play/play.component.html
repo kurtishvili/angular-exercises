@@ -1,0 +1,11 @@
+<div class="game-wrapper">
+
+    <div class="arrow top" (click)="topTransition()"></div>
+    <div class="arrow left" (click)="leftTransition()"></div>
+    <div class="ball" [style.top.%]="top" [style.left.%]="left">
+        <app-ball [ballSize]="ballSize" [color]="color" [text]="text"></app-ball>
+    </div>
+    <div class="arrow right" (click)="rightTransition()"></div>
+    <div class="arrow bottom" (click)="bottomTransition()"></div>
+
+</div>

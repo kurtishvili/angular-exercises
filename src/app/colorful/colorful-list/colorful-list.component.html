@@ -1,0 +1,7 @@
+<div class="content-wrapper">
+    <div class="list-item-wrapper">
+        <list-item *ngFor="let item of items; let i=index; let first = first; let last = last;" [color]="item.color"
+            [backgroundColor]="item.backgroundColor" [description]="item.description" (moveToTop)="topTransition(i)"
+            (moveToBottom)="bottomTransition(i)" [isFirst]="first" [isLast]="last"></list-item>
+    </div>
+</div>

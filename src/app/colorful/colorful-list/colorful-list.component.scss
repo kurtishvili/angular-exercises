@@ -1,0 +1,7 @@
+.content-wrapper {
+    width: 450px;
+    .list-item-wrapper {
+        overflow: auto;
+        height: calc(100vh - 308px);
+    }
+}

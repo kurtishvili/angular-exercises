@@ -1,0 +1,4 @@
+<div class="color-ball" *ngFor="let ball of balls" >
+    <app-ball [color]="ball.color" [text]="ball.text" (click)="ballClick(ball)" ></app-ball>
+</div>
+ 

@@ -1,0 +1,7 @@
+<div class="list-container">
+
+    <div class="list-item-wrapper" *ngFor="let image of images; let index=index">
+        <app-images-list-item [url]="image.url" [name]="image.name" (onDelete)="onDeleteListItem(index)" ></app-images-list-item>
+    </div>
+
+</div>
